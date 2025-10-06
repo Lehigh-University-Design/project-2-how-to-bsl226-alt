@@ -82,7 +82,7 @@ h1 {
   
 }
 
-.words {
+/* .words {
     font-family: 'Work Sans', sans-serif;
     font-size: 1.2em;
     color: white;
@@ -91,5 +91,68 @@ h1 {
     background-color: rgba(0, 0, 0, 0.3);
     border-radius: 8px;
 
+} */
+
+.text {
+    display: flex;
+    /* justify-content: center;
+    align-items: center;
+    text-align: center; */
+    margin: 50px;
+    padding: 10px;
+
+    font-family: 'Work Sans', sans-serif;
+    font-size: 1.2em;
+    color: white;
+   
+    background-color: rgba(0, 0, 0, 0.3);
+    border-radius: 8px;
+
+    opacity: 0;
+    transform: translateX(-100px);
+    transition: opacity 1s ease-out, transform 1s ease-out;
+
 }
+
+.text.animate {
+    transform: translateX(0px);
+    opacity: 1;
+}
+
+.image { 
+    display: flex;
+    /* justify-content: center;
+    align-items: center;
+    text-align: center; */
+    margin: 50px;
+    padding: 10px;
+
+
+    opacity: 0;
+    transform: translateX(-100px);
+    transition: opacity 1s ease-out, transform 1s ease-out;
+}
+
+.image img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+.image.animate {
+    transform: translateX(0px);
+    opacity: 1;
+}
+
+.two-columns {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 50px;
+    margin: 40px;
+    padding: 10px;
+    background-color: rgba(0, 0, 0, 0.3);
+    border-radius: 8px;
+}
+
+/* separating sections by color, type hierarchy (making text smaller), nav bar,  */
 

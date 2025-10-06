@@ -1,3 +1,19 @@
 // Start JS script code, feel free to not use this or remove it
+ 
+document.addEventListener("DOMContentLoaded", () => {
 
-console.log("Hello, World!");
+    const observer = new IntersectionObserver(entries => {
+	  entries.forEach(entry => {
+		if (entry.isIntersecting) {
+		  entry.target.classList.add('animate');
+		  return;
+		}
+		
+	  });
+	}, { threshold: 0.5 });
+
+    const allAnimatedElements = document.querySelectorAll('.text, .image');
+
+    allAnimatedElements.forEach((element) => observer.observe(element));
+
+    }); 
