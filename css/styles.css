@@ -21,14 +21,8 @@ body {
 
 }
 
-.row {
-    display: flex;
-    flex-direction: row;
-    gap: 20px;
-
-}
-
 /* Reset default heading spacing and avoid global overrides for layout */
+
 h1 {
     margin: 0;
     font-size: 2.5rem; /* fallback size if not overridden in #head */
@@ -62,14 +56,14 @@ h1 {
 
 #head p {
     text-decoration: none;
-    font-size: 5em; /* smaller subtitle size */
+    font-size: 3em; /* smaller subtitle size */
     font-style: bold;
     /* margin: 0 0 0.2rem 0; space below h2 toward h1 */
     color: white;
     /* letter-spacing: 0.08em; often nice for small caps-like subtitles */
     text-transform: uppercase;
     margin: 0.15em;
-    margin-left: 0.25em;
+    margin-left: 0.42em;
 
     /* add a serif font */
     font-family: 'Times New Roman', serif;
@@ -82,30 +76,88 @@ h1 {
   
 }
 
-/* .words {
-    font-family: 'Work Sans', sans-serif;
-    font-size: 1.2em;
+.post {
+    text-align: center;
+    font-size: 1.5em;
     color: white;
-    margin: 20px;
-    padding: 10px;
+    margin: 16em;
+    padding: 2em;
     background-color: rgba(0, 0, 0, 0.3);
     border-radius: 8px;
+}
 
-} */
+.title {
+    /* display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 15em; */
+
+    text-align: left;
+    /* font-size: 2em; */
+    color: white;
+    margin: 10em;
+    padding: 1em;
+    /* background-color: rgba(0, 0, 0, 0.3); */
+    /* border-radius: 8px; */
+}
+
+.title h1 {
+    font-size: 5em;
+    font-style: bold;
+    margin: 10px;
+    padding: 0;
+    /* background-color: rgba(0, 0, 0, 0.3); */
+    /* border-radius: 8px; */
+}
+
+.title h2 {
+    font-size: 3em;
+    font-style: bold;
+    margin: 5em;
+    padding: 0;
+    text-align: center;
+    
+    /* background-color: rgba(0, 0, 0, 0.3); */
+    /* border-radius: 8px; */
+}
+
+.title h2:hover {
+    color: grey;
+    cursor: pointer;
+    text-decoration: underline;
+}
+
+/* Structure */
+
+.one-column {
+    display: grid;
+    grid-template-columns: 1fr, 1fr;
+    gap: 15em;
+    margin: 20em;
+    padding: 5em;
+    /* background-color: rgba(0, 0, 0, 0.3); */
+    border-radius: 8px;
+}
+
+.two-columns {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 15em;
+    margin: 10em;
+    padding: 5em;
+    /* background-color: rgba(0, 0, 0, 0.3); */
+    border-radius: 8px;
+}
 
 .text {
-    display: flex;
-    /* justify-content: center;
-    align-items: center;
-    text-align: center; */
-    margin: 50px;
-    padding: 10px;
-
     font-family: 'Work Sans', sans-serif;
     font-size: 1.2em;
     color: white;
    
-    background-color: rgba(0, 0, 0, 0.3);
+    padding: 2em;
+    min-height: 20vh; /* vh = height of browser */
+    background-color: #333333;
+    
+    /* background-color: rgba(0, 0, 0, 0.3); */
     border-radius: 8px;
 
     opacity: 0;
@@ -120,16 +172,14 @@ h1 {
 }
 
 .image { 
-    display: flex;
-    /* justify-content: center;
-    align-items: center;
-    text-align: center; */
-    margin: 50px;
-    padding: 10px;
-
+    padding: 2em;
+    min-height: 20vh; /* vh = height of browser */
+    background-color: #333333;
+    /* color: var(--background-color); */
+    border-radius: 8px;
 
     opacity: 0;
-    transform: translateX(-100px);
+    transform: translateX(100px);
     transition: opacity 1s ease-out, transform 1s ease-out;
 }
 
@@ -144,15 +194,7 @@ h1 {
     opacity: 1;
 }
 
-.two-columns {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 50px;
-    margin: 40px;
-    padding: 10px;
-    background-color: rgba(0, 0, 0, 0.3);
-    border-radius: 8px;
-}
 
-/* separating sections by color, type hierarchy (making text smaller), nav bar,  */
+/* Crit Notes: separating sections by color, type hierarchy (making text smaller),
+& nav bar (some indication of where the user is in the website)  */
 
