@@ -12,7 +12,7 @@ document.addEventListener("DOMContentLoaded", () => {
 	  });
 	}, { threshold: 0.5 });
 
-    const allAnimatedElements = document.querySelectorAll('.text, .image');
+    const allAnimatedElements = document.querySelectorAll('.text, .image, .imagey');
 
     allAnimatedElements.forEach((element) => observer.observe(element));
 
