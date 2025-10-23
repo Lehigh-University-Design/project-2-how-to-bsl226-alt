@@ -15,9 +15,11 @@ body {
     /* background-color: var(--background-color); */
     /* margin: 1em; */
     font-size: 1em;
-    
-    background-color: rgb(210, 182, 147);
-    color: white;
+    margin: 0;
+
+    /* background-color: rgb(210, 182, 147); */
+    background-color: rgb(224, 221, 221);
+    /* color: white; */
 
 }
 
@@ -49,7 +51,7 @@ h1 {
     font-size: 20em; /* larger, readable main title */
     font-style: bold;
     /* margin: 0.1rem 0 0 0; small top gap so h2 doesn't touch too closely */
-    color: white;
+    color: rgb(0, 0, 0);
     margin-top: -0.2em;
 
 }
@@ -59,14 +61,14 @@ h1 {
     font-size: 3em; /* smaller subtitle size */
     font-style: bold;
     /* margin: 0 0 0.2rem 0; space below h2 toward h1 */
-    color: white;
+    color: rgb(0, 0, 0);
     /* letter-spacing: 0.08em; often nice for small caps-like subtitles */
     text-transform: uppercase;
     margin: 0.15em;
     margin-left: 0.42em;
 
     /* add a serif font */
-    font-family: 'Times New Roman', serif;
+    font-family: 'Georgia', serif;
 
 }
 
@@ -84,20 +86,29 @@ h1 {
     padding: 1em;
     background-color: rgba(0, 0, 0, 0.3);
     border-radius: 8px;
+
+    font-family: "Georgia", serif;
 }
 
-.title {
-    /* display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 15em; */
+.posts {
+    text-align: center;
+    font-size: 2em;
+    color: white;
+    margin: 5em;
+    padding: 1em;
+    background-color: rgba(0, 0, 0, 0.3);
+    border-radius: 8px;
 
+    font-family: "Georgia", serif;
+}
+
+
+.title {
     text-align: left;
-    /* font-size: 2em; */
     color: white;
     margin: 10em;
     padding: 1em;
-    /* background-color: rgba(0, 0, 0, 0.3); */
-    /* border-radius: 8px; */
+   
 }
 
 .title h1 {
@@ -105,44 +116,32 @@ h1 {
     font-style: bold;
     margin: 10px;
     padding: 0;
-    /* background-color: rgba(0, 0, 0, 0.3); */
-    /* border-radius: 8px; */
+   
 }
 
 .title h2 {
     font-size: 3em;
     font-style: bold;
-    margin: 5em;
+    margin: 1em;
     padding: 0;
     text-align: center;
     
-    /* background-color: rgba(0, 0, 0, 0.3); */
-    /* border-radius: 8px; */
 }
 
 .title h2:hover {
     color: grey;
     cursor: pointer;
-    text-decoration: underline;
+    
 }
 
 .title p {
     font-size: 2em;
     font-style: bold;
-    margin: 1em;
+    margin: 0em;
     padding: 0;
 
     text-align: center;
 }
-
-/* .sticky-bit {
-  background-color: coral;
-  position: sticky;
-  top: 0; */
-  /* bottom: 0; sticks to the bottom */
-  /* padding: 1em;
-} */
-
 
 /* Structure */
 
@@ -165,7 +164,7 @@ h1 {
 .container3 {
   max-width: 100%;
   margin: 20px;
-  padding: 10px;
+  padding: 8px;
 
   background-color: rgb(206, 60, 60);
 }
@@ -175,11 +174,10 @@ h1 {
     display: grid;
     grid-template-columns: 1fr;
     gap: 0em;
-    margin: 23em;
+    margin: 25em;
     padding: 5em;
 
     min-height: 20vh;
-    /* background-color: rgba(0, 0, 0, 0.3); */
     background-color: #333333;
     border-radius: 8px;
 }
@@ -193,27 +191,53 @@ h1 {
 
 .two-columns {
     display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 15em;
-    margin: 10em;
-    padding: 5em;
-    /* background-color: rgba(0, 0, 0, 0.3); */
-    border-radius: 8px;
-}
-
-.three-column {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    gap: 5em;
+    grid-template-columns: 2fr 2.5fr;
+    gap: 12em;
     margin: 5em;
     padding: 5em;
     /* background-color: rgba(0, 0, 0, 0.3); */
     border-radius: 8px;
+
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+}
+
+.two-columnss {
+    display: grid;
+    grid-template-columns: 2.5fr 2fr;
+    gap: 12em;
+    margin: 5em;
+    padding: 5em;
+    /* background-color: rgba(0, 0, 0, 0.3); */
+    border-radius: 8px;
+
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+}
+
+
+.three-column {
+    display: grid;
+    grid-template-columns: 2fr 2fr 2fr;
+    gap: 5em;
+    margin-top: 2em;
+    margin-left: 2em;
+    margin-right: 2em;
+    margin-bottom: 5em;
+    padding: 5em;
+    /* background-color: rgba(0, 0, 0, 0.3); */
+    border-radius: 8px;
+
+    justify-content: center;
+    align-content: center;
+    align-items: center;
 }
 
 .text {
     font-family: 'Work Sans', sans-serif;
-    font-size: 1.2em;
+    font-size: 1.1em;
     color: white;
    
     padding: 2em;
@@ -239,7 +263,7 @@ h1 {
 
 .text p {
     font-size: 1.5em;
-    font-family: 'Times New Roman', serif;
+    font-family: 'Georgia', serif;
     margin-top: 1em;
     margin-bottom: 1em;
 }
@@ -255,6 +279,7 @@ h1 {
     background-color: #333333;
     /* color: var(--background-color); */
     border-radius: 8px;
+    align-items: center;
 
     opacity: 0;
     transform: translateX(100px);
@@ -273,8 +298,9 @@ h1 {
 }
 
 .imagey {
-    padding: 2em;
-    min-height: 20vh; /* vh = height of browser */
+    /* padding: 2em; */
+    margin: auto;
+    min-height: 40vh; /* vh = height of browser */
     background-color: #333333;
     /* color: var(--background-color); */
     border-radius: 8px;
@@ -286,7 +312,8 @@ h1 {
 
 .imagey img {
     max-width: 100%;
-    height: auto;
+    height: 25vw;
+    /* width: 50vw; */
     border-radius: 8px;
 }
 
@@ -295,6 +322,33 @@ h1 {
     opacity: 1;
 }
 
+/* .image1 { 
+    padding: 2em;
+    margin: auto; 
+    min-height: 40vh; 
+    background-color: #333333;
+    border-radius: 8px;
+
+
+    opacity: 0;
+    transform: translateY(100px);
+    transition: opacity 1s ease-out, transform 1s ease-out;
+}
+
+.image1 img {
+    max-width: 100%;
+    height: 25vw;
+    border-radius: 8px;
+}
+
+.image1.animate {
+    transform: translateY(0px);
+    opacity: 1;
+} */
+
+/* I created class .image1 to try to adjust
+the size of the completed face image 
+at the start of the website, but it didn't wprk */
 
 
 /* Crit Notes: separating sections by color, type hierarchy (making text smaller),
