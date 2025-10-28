@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- CSS Refs -->
     <link type="text/css" href="../css/styles.css" rel="stylesheet"/>
-
+    
     <!-- Title -->
     <title>How To Draw a Face</title>
 
@@ -14,8 +14,152 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
 
+    <!-- Georgia (OCT 22) -->
+    <link rel="stylesheet" href="https://use.typekit.net/hoe6fmr.css">
+
+    <style>
+       
+        /* Sticky Header */
+        header {
+            position: sticky;
+            top: 0;
+            background-color: #333;
+            padding: 1rem;
+            box-shadow: 0 15px 5px rgba(0,0,0,0.1);
+            z-index: 1000;
+            
+        }
+
+        nav {
+            display: flex;
+            justify-content: right;
+            gap: 0em;
+        }
+
+        nav img {
+            /* display: inline-block; */
+            align-self: left;
+            width: auto;
+            height: 2.5em;
+            margin-right: 1em;
+        }
+
+        nav h1 {
+            color: white;
+            font-family: "Work Sans", sans-serif;
+            font-size: 2em;
+            margin-right: 23.55em;
+        }
+
+        nav h1 a {
+            text-decoration: inherit;
+            color: white;
+        }
+
+        nav h1 a:hover {
+            color: grey;
+        }
+
+        nav button {
+            background-color: white;
+            color: white;
+            border: none;
+            padding: 0.75rem 1.5rem;
+            font-size: 1rem;
+            cursor: pointer;
+            /* border-radius: 5px; */
+            transition: background-color 0.3s;
+        }
+
+        nav button:hover {
+            /* background-color: #0056b3; */
+            background-color: rgb(224, 221, 221);
+        }
+
+        .Loomis {
+            background-color: rgb(26, 72, 137);
+        }
+
+        .Features {
+            background-color: rgb(250, 184, 184);
+        }
+
+        .Examples {
+            background-color: rgb(206, 60, 60);
+        }
+
+        /* Content Sections */
+
+        #section1 {
+            /* background-color: #f8f9fa; */
+            /* font-size: 5em;
+            font-style: bold; */
+            /* margin: 10px; */
+            text-align: left;
+            color: white;
+            margin: 5em;
+            padding: 1em;
+        }
+
+        #section1 h3 {
+            font-size: 5em;
+            font-style: bold;
+            /* margin: 10px; */
+            padding: 0;
+            color: white;
+            font-family: "Work Sans", sans-serif;
+        }
+
+        #section2 {
+            /* background-color: #e9ecef; */
+            text-align: left;
+            color: white;
+            margin: 5em;
+            padding: 1em;
+        }
+
+        #section2 h3 {
+            font-size: 5em;
+            font-style: bold;
+            /* margin: 10px; */
+            padding: 0;
+            color: white;
+            font-family: "Work Sans", sans-serif;
+        }
+
+        #section3 {
+            /* background-color: #dee2e6; */
+            text-align: left;
+            color: white;
+            margin: 5em;
+            padding: 1em;
+        }
+
+        #section3 h3 {
+            font-size: 5em;
+            font-style: bold;
+            /* margin: 10px; */
+            padding: 0;
+            color: white;
+            font-family: "Work Sans", sans-serif;
+        }
+
+    </style>
+
+    
 </head>
 <body>
+
+    <header>
+        <nav>
+            <img src="../images/face.svg" title="My Site"></img>
+            <h1><a href="../">"LOGO"</a></h1>
+            <button class="Loomis" onclick="scrollToSection('section1')">ONE PENCIL DRAWINGS</button>
+            <button class="Features" onclick="scrollToSection('section2')">DAVID FINCH</button>
+            <button class="Examples" onclick="scrollToSection('section3')">PROKO</button>
+        </nav>
+    </header>
+
 
     <!-- Content -->
     
@@ -25,38 +169,93 @@
 
     <div class="post">
         <p>For the creatives that want to explore the depths of drawing. 
-        Here are some Youtube videos that teach you how to not only draw a face,
-        but also how to begin figure drawing as well!
+        Here are some Youtube videos to help guide you on your journey!
         </p>
     </div>
 
-    <div class="title">
-        <h1>One Pencil Drawing:</h1>
+    <div class="container1">
+       
+        <div id="section1">
+            <h3>"ONE PENCIL DRAWINGS"</h3>
+        </div>
+
+        <div class="grid">
+            
+            <div class="column">
+                <iframe width="300" height="200" src="https://www.youtube.com/embed/10dBjmFDD-k?si=3kTOql8CsCX-B3K5" title="YouTube video player" frameborder="0" allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            </div>
+        
+            <div class="column">
+                <iframe width="300" height="200" src="https://www.youtube.com/embed/FjYCYB1uO6g?si=-SEJBaYOvb7OooP3" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            </div>
+
+            <div class="column">
+                <iframe width="300" height="200" src="https://www.youtube.com/embed/zgfKQYh0Ufc?si=HGAt74vG7npIFHKd" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            </div>
+
+        </div>
+
+    </div>
+    
+    <div class="container2">
+        
+        <div id="section2">
+            <h3>"DAVID FINCH"</h3>
+        </div>
+
+        <div class="grid">
+            
+            <div class="column">
+                <iframe width="300" height="200" src="https://www.youtube.com/embed/6i6JDwEwXJI?si=T0_fNfOPIuk-l775" title="YouTube video player" frameborder="0" allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            </div>
+
+            <div class="column">
+                <iframe width="300" height="200" src="https://www.youtube.com/embed/YcM5PHft0EQ?si=yYNDTnD4DRZyqu94" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            </div>
+
+            <div class="column">
+                <iframe width="300" height="200" src="https://www.youtube.com/embed/7mnrCcCJ3IM?si=vuLLIk_KNP3pKlxT" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            </div>
+
+        </div>
+    
     </div>
 
-    <div class="one-column">
-        <iframe width="560" height="315" src="https://www.youtube.com/embed/10dBjmFDD-k?si=3kTOql8CsCX-B3K5" title="YouTube video player" frameborder="0" allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+    <div class="container3">
+        
+        <div id="section3">
+            <h3>"PROKO"</h3>
+        </div>
+
+        <div class="grid">
+
+            <div class="column">
+                <iframe width="300" height="200" src="https://www.youtube.com/embed/1EPNYWeEf1U?si=p0YrF5JBWNpYTcZV" title="YouTube video player" frameborder="0" allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            </div>
+
+            <div class="column">
+                <iframe width="300" height="200" src="https://www.youtube.com/embed/DmqFbgKWoao?si=uh9IS-HX_1R-yhPj" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            </div>
+
+            <div class="column">
+                <iframe width="300" height="200" src="https://www.youtube.com/embed/XF_shGImfbc?si=qrkJhJ02yQP5L1uq" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            </div>
+
+        </div>
+        
     </div>
 
-    <div class="title">
-        <h1>David Finch:</h1>
-    </div>
+ <!-- Script -->
+    <script src="../js/script.js"></script>
 
-    <div class="one-column">
-        <iframe width="560" height="315" src="https://www.youtube.com/embed/6i6JDwEwXJI?si=T0_fNfOPIuk-l775" title="YouTube video player" frameborder="0" allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-    </div>
-
-    <div class="title">
-        <h1>Proko:</h1>
-    </div>
-
-    <div class="one-column">
-        <iframe width="560" height="315" src="https://www.youtube.com/embed/1EPNYWeEf1U?si=p0YrF5JBWNpYTcZV" title="YouTube video player" frameborder="0" allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-    </div>
-
-
-
-
+    <script>
+        function scrollToSection(sectionId) {
+            const section = document.getElementById(sectionId);
+            if (section) {
+                section.scrollIntoView({ behavior: 'smooth' });
+            }
+        }
+    </script>
 
 
 

@@ -36,23 +36,60 @@
 
         nav {
             display: flex;
-            justify-content: center;
-            gap: 5rem;
+            justify-content: right;
+            gap: 0em;
+        }
+
+        nav img {
+            /* display: inline-block; */
+            align-self: left;
+            width: auto;
+            height: 2.5em;
+            margin-right: 1em;
+        }
+
+        nav h1 {
+            color: white;
+            font-family: "Work Sans", sans-serif;
+            font-size: 2em;
+            margin-right: 23em;
+        }
+
+        nav h1 a {
+            text-decoration: inherit;
+            color: white;
+        }
+
+        nav h1 a:hover {
+            color: grey;
         }
 
         nav button {
             background-color: white;
-            color: black;
+            color: white;
             border: none;
             padding: 0.75rem 1.5rem;
             font-size: 1rem;
             cursor: pointer;
-            border-radius: 5px;
+            /* border-radius: 5px; */
             transition: background-color 0.3s;
         }
 
         nav button:hover {
-            background-color: #0056b3;
+            /* background-color: #0056b3; */
+            background-color: rgb(224, 221, 221);
+        }
+
+        .Loomis {
+            background-color: rgb(26, 72, 137);
+        }
+
+        .Features {
+            background-color: rgb(250, 184, 184);
+        }
+
+        .Examples {
+            background-color: rgb(206, 60, 60);
         }
 
         /* Content Sections */
@@ -73,6 +110,8 @@
             font-style: bold;
             /* margin: 10px; */
             padding: 0;
+            color: white;
+            font-family: "Work Sans", sans-serif;
         }
 
         #section2 {
@@ -88,6 +127,8 @@
             font-style: bold;
             /* margin: 10px; */
             padding: 0;
+            color: white;
+            font-family: "Work Sans", sans-serif;
         }
 
         #section3 {
@@ -103,6 +144,8 @@
             font-style: bold;
             /* margin: 10px; */
             padding: 0;
+            color: white;
+            font-family: "Work Sans", sans-serif;
         }
 
     </style>
@@ -117,9 +160,11 @@
 
     <header>
         <nav>
-            <button onclick="scrollToSection('section1')">LOOMIS METHOD</button>
-            <button onclick="scrollToSection('section2')">FACIAL FEATURES</button>
-            <button onclick="scrollToSection('section3')">EXAMPLES</button>
+            <img src="./images/face.svg" title="My Site"></img>
+            <h1><a href="./">"LOGO"</a></h1>
+            <button class="Loomis" onclick="scrollToSection('section1')">LOOMIS METHOD</button>
+            <button class="Features" onclick="scrollToSection('section2')">FACIAL FEATURES</button>
+            <button class="Examples" onclick="scrollToSection('section3')">EXAMPLES</button>
         </nav>
     </header>
 
@@ -134,7 +179,7 @@
     </div>
 
     <div class="one-column">
-        <div class="imagey">
+        <div class="image1">
             <img src="images/IMG_1728.JPG" alt="head sketch"></img>
         </div>
     </div>

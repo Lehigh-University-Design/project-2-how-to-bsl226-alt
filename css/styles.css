@@ -120,7 +120,7 @@ h1 {
 }
 
 .title h2 {
-    font-size: 3em;
+    font-size: 5em;
     font-style: bold;
     margin: 1em;
     padding: 0;
@@ -141,6 +141,15 @@ h1 {
     padding: 0;
 
     text-align: center;
+}
+
+.title h2 a {
+    text-decoration: underline;
+    color: black;
+}
+
+.title h2 a:hover {
+    color: grey;
 }
 
 /* Structure */
@@ -164,21 +173,64 @@ h1 {
 .container3 {
   max-width: 100%;
   margin: 20px;
-  padding: 8px;
+  padding: 10px;
 
   background-color: rgb(206, 60, 60);
 }
 
+.grid {
+    display: grid;
+    grid-template-columns: 2fr 2fr 2fr;
+    gap: 30px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    margin-left: 20px;
+    margin-right: 20px;
+    padding: 200px;
+    /* background-color: rgba(0, 0, 0, 0.3); */
+    border-radius: 8px;
+    /* min-width: 1000px; */
+
+    justify-content: center;
+    /* align-content: center;
+    align-items: center; */
+
+}
+
+.column {
+    display: grid;
+    /* grid-template-columns: 2fr; */
+    margin-top: 10px;
+    margin-bottom: 200px;
+    margin-left: 10px;
+    margin-right: 10px;
+    padding: 15px;
+
+    /* min-height: 20vh;
+    background-color: #333333; */
+    border-radius: 8px;
+
+    /* justify-content: center;
+    align-content: center;
+    align-items: center; */
+
+}
+
+.column iframe {
+    display: block;
+    margin: 0 auto;
+    /* padding: 2em; */
+    border-radius: 8px;
+}
 
 .one-column {
     display: grid;
-    grid-template-columns: 1fr;
-    gap: 0em;
+    /* grid-template-columns: 2fr; */
     margin: 25em;
     padding: 5em;
 
-    min-height: 20vh;
-    background-color: #333333;
+    /* min-height: 20vh;
+    background-color: #333333; */
     border-radius: 8px;
 }
 
@@ -220,12 +272,13 @@ h1 {
 
 .three-column {
     display: grid;
-    grid-template-columns: 2fr 2fr 2fr;
+    grid-template-columns: 1fr 1fr 1fr;
     gap: 5em;
-    margin-top: 2em;
-    margin-left: 2em;
-    margin-right: 2em;
-    margin-bottom: 5em;
+    margin: 5em;
+    /* margin-top: 5em;
+    margin-left: 5em;
+    margin-right: 5em;
+    margin-bottom: 5em; */
     padding: 5em;
     /* background-color: rgba(0, 0, 0, 0.3); */
     border-radius: 8px;
@@ -298,12 +351,12 @@ h1 {
 }
 
 .imagey {
-    /* padding: 2em; */
-    margin: auto;
-    min-height: 40vh; /* vh = height of browser */
+    padding: 2em;
+    /* margin: auto; */
+    min-height: 20vh; 
     background-color: #333333;
-    /* color: var(--background-color); */
     border-radius: 8px;
+    align-items: center;
 
     opacity: 0;
     transform: translateY(100px);
@@ -312,8 +365,9 @@ h1 {
 
 .imagey img {
     max-width: 100%;
-    height: 25vw;
-    /* width: 50vw; */
+    /* height: auto; */
+    height: 40vh;
+    width: 25vw;
     border-radius: 8px;
 }
 
@@ -322,35 +376,80 @@ h1 {
     opacity: 1;
 }
 
-/* .image1 { 
+.image1 { 
     padding: 2em;
-    margin: auto; 
-    min-height: 40vh; 
+    min-height: 20vh; /* vh = height of browser */
     background-color: #333333;
+    /* color: var(--background-color); */
     border-radius: 8px;
-
+    align-items: center;
 
     opacity: 0;
     transform: translateY(100px);
-    transition: opacity 1s ease-out, transform 1s ease-out;
+    transition: opacity 0.5s ease-out, transform 1s ease-out;
 }
 
 .image1 img {
     max-width: 100%;
-    height: 25vw;
+    height: auto;
     border-radius: 8px;
 }
 
 .image1.animate {
     transform: translateY(0px);
     opacity: 1;
-} */
+}
 
 /* I created class .image1 to try to adjust
 the size of the completed face image 
 at the start of the website, but it didn't wprk */
 
-
+/* Masthead */
+  /* masthead {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding: 1em 2em;
+    background-color: var(--dark-color);
+    color: var(--light-color);
+    margin-bottom: 1em;
+  }
+  
+  masthead h1 {
+    margin-right: auto;
+    font-weight: 600;
+    text-transform: uppercase;
+    margin: 0 auto 0 0;
+  }
+  
+  masthead img {
+    display: inline-block;
+    align-self: center;
+    width: auto;
+    height: 2.5em;
+    margin-right: .5em;
+  }
+  
+  masthead ul {
+    padding-inline-start: 0;
+  }
+  
+  masthead li {
+    list-style: none;
+    display: inline-block;
+    padding: 0 20px;
+  }
+  
+  masthead a {
+    text-decoration: none;
+    color: var(--light-color);
+    transition: all 0.3s ease 0s;
+  }
+  
+  masthead a:hover {
+    color: coral;
+  }
+   */
 /* Crit Notes: separating sections by color, type hierarchy (making text smaller),
 & nav bar (some indication of where the user is in the website)  */
 
