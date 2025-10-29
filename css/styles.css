@@ -128,11 +128,11 @@ h1 {
     
 }
 
-.title h2:hover {
+/* .title h2:hover {
     color: grey;
     cursor: pointer;
     
-}
+} */
 
 .title p {
     font-size: 2em;
@@ -181,46 +181,51 @@ h1 {
 .grid {
     display: grid;
     grid-template-columns: 2fr 2fr 2fr;
-    gap: 30px;
-    margin-top: 20px;
-    margin-bottom: 20px;
+    gap: 50px;
+    /* margin-top: 20px; */
+    margin-bottom: 40px;
     margin-left: 20px;
     margin-right: 20px;
-    padding: 200px;
+    padding: 20px;
     /* background-color: rgba(0, 0, 0, 0.3); */
     border-radius: 8px;
     /* min-width: 1000px; */
 
     justify-content: center;
-    /* align-content: center;
-    align-items: center; */
+    align-content: center;
+    align-items: center;
 
 }
 
 .column {
     display: grid;
-    /* grid-template-columns: 2fr; */
     margin-top: 10px;
-    margin-bottom: 200px;
+    margin-bottom: 100px;
     margin-left: 10px;
     margin-right: 10px;
-    padding: 15px;
+    padding: 10px;
 
-    /* min-height: 20vh;
-    background-color: #333333; */
     border-radius: 8px;
 
-    /* justify-content: center;
+    justify-content: center;
+    justify-items: center;
     align-content: center;
-    align-items: center; */
+    align-items: center;
 
+}
+
+iframe {
+  width: 80%;
+  height: 400px;
+  border: none;
 }
 
 .column iframe {
     display: block;
     margin: 0 auto;
-    /* padding: 2em; */
+    padding: 2em;
     border-radius: 8px;
+    background-color: #333333;
 }
 
 .one-column {
@@ -272,15 +277,11 @@ h1 {
 
 .three-column {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-columns: 2fr 2fr 2fr;
     gap: 5em;
     margin: 5em;
-    /* margin-top: 5em;
-    margin-left: 5em;
-    margin-right: 5em;
-    margin-bottom: 5em; */
-    padding: 5em;
-    /* background-color: rgba(0, 0, 0, 0.3); */
+    padding: 2em;
+    
     border-radius: 8px;
 
     justify-content: center;
@@ -311,7 +312,6 @@ h1 {
     font-style: bold;
     margin-top: 0.5em;
     margin-bottom: 0.5em;
-
 }   
 
 .text p {
@@ -400,56 +400,39 @@ h1 {
     opacity: 1;
 }
 
-/* I created class .image1 to try to adjust
-the size of the completed face image 
-at the start of the website, but it didn't wprk */
+.texts {
+    font-family: 'Work Sans', sans-serif;
+    font-size: 1.1em;
+    color: white;
+   
+    padding: 2em;
+    margin-bottom: 5em;
+    min-height: 20vh;
+    background-color: #333333;
+    
+    border-radius: 8px;
 
-/* Masthead */
-  /* masthead {
-    display: flex;
-    justify-content: flex-end;
-    align-items: center;
-    padding: 1em 2em;
-    background-color: var(--dark-color);
-    color: var(--light-color);
+    opacity: 0;
+    transform: translateX(-100px);
+    transition: opacity 1s ease-out, transform 1s ease-out;
+
+}
+
+.texts h1 {
+    font-size: 2em;
+    font-style: bold;
+    margin-top: 0.5em;
+    margin-bottom: 0.5em;
+}   
+
+.texts p {
+    font-size: 1.5em;
+    font-family: 'Georgia', serif;
+    margin-top: 1em;
     margin-bottom: 1em;
-  }
-  
-  masthead h1 {
-    margin-right: auto;
-    font-weight: 600;
-    text-transform: uppercase;
-    margin: 0 auto 0 0;
-  }
-  
-  masthead img {
-    display: inline-block;
-    align-self: center;
-    width: auto;
-    height: 2.5em;
-    margin-right: .5em;
-  }
-  
-  masthead ul {
-    padding-inline-start: 0;
-  }
-  
-  masthead li {
-    list-style: none;
-    display: inline-block;
-    padding: 0 20px;
-  }
-  
-  masthead a {
-    text-decoration: none;
-    color: var(--light-color);
-    transition: all 0.3s ease 0s;
-  }
-  
-  masthead a:hover {
-    color: coral;
-  }
-   */
-/* Crit Notes: separating sections by color, type hierarchy (making text smaller),
-& nav bar (some indication of where the user is in the website)  */
+}
 
+.texts.animate {
+    transform: translateX(0px);
+    opacity: 1;
+}
