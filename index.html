@@ -36,9 +36,17 @@
 
         nav {
             display: flex;
-            justify-content: right;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 1rem;
             gap: 0em;
         }
+
+        nav div {
+            display: flex;
+            align-items: center;
+        }
+
 
         nav img {
             /* display: inline-block; */
@@ -52,7 +60,6 @@
             color: white;
             font-family: "Work Sans", sans-serif;
             font-size: 2em;
-            margin-right: 23em;
         }
 
         nav h1 a {
@@ -160,11 +167,16 @@
 
     <header>
         <nav>
-            <img src="./images/face.svg" title="My Site"></img>
-            <h1><a href="./">"LOGO"</a></h1>
-            <button class="Loomis" onclick="scrollToSection('section1')">LOOMIS METHOD</button>
-            <button class="Features" onclick="scrollToSection('section2')">FACIAL FEATURES</button>
-            <button class="Examples" onclick="scrollToSection('section3')">EXAMPLES</button>
+            <div>
+                <img src="./images/face.svg" title="My Site"></img>
+                <h1><a href="./">"LOGO"</a></h1>
+            </div>
+            
+            <div>
+                <button class="Loomis" onclick="scrollToSection('section1')">LOOMIS METHOD</button>
+                <button class="Features" onclick="scrollToSection('section2')">FACIAL FEATURES</button>
+                <button class="Examples" onclick="scrollToSection('section3')">EXAMPLES</button>
+            </div>
         </nav>
     </header>
 
