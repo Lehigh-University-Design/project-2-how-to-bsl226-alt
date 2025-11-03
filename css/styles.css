@@ -125,14 +125,11 @@ h1 {
     margin: 1em;
     padding: 0;
     text-align: center;
+
+    text-decoration: underline;
+    color: black;
     
 }
-
-/* .title h2:hover {
-    color: grey;
-    cursor: pointer;
-    
-} */
 
 .title p {
     font-size: 2em;
