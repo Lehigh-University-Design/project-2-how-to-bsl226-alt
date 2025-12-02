@@ -236,13 +236,6 @@ iframe {
     border-radius: 8px;
 }
 
-/* .one-column .img {
-    max-width: 100%;
-    height: auto;
-    display: block;
-    border-radius: 8px;
-} */
-
 .two-columns {
     display: grid;
     grid-template-columns: 2fr 2.5fr;
